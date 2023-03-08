@@ -6,17 +6,20 @@ import About from './components/about/About'
 import Resume from './components/resume/Resume'
 import Contact from './components/contact/Contact'
 
+
+
 function App() {
   return (
    <>
-   <Sidebar />
+  
+    <Sidebar />
    <div className='main'>
     <Home />
     <About />
     <Resume />
     <Portfolio />
     <Contact />
-   </div>
+   </div> 
    </>
   );
 }

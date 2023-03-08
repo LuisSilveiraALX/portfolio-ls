@@ -10,7 +10,9 @@
     max-width: 540px;
     text-align: center;
 }
-
+.animate__animated {
+   font-size:  var( --h1-font-size);
+}
 .textweb {
     font-size: 15px;
     color: #ccc;

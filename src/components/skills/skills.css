@@ -17,17 +17,14 @@
       top: -0.875rem;
   }
 
-
 .experience__container {
-    
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1.875rem;
-    
 }
 
 .experience__container > div {
     background-color: var(--container-color);
-    padding: 1.875rem;
+    padding: 2rem;
     border-radius: vaR(--border-radius);
     position: relative;
     box-shadow: var(--shadow);
@@ -43,7 +40,7 @@
 .experience__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 2rem;
+    row-gap: 4rem;
     color: black;
 }
 

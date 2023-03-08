@@ -3,14 +3,10 @@
 
 }
 
-.contact__options {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-}
-
-.contact__option {
-    box-shadow: var(--shadow);
+.contact__content {
+    width: 250px;
+    height: 150px;
+    color: black;
     background-color: var(--container-color);
     border: none;
     outline: none;
@@ -21,83 +17,55 @@
     border-radius: 1.2rem;
     text-align: center;
     border: 1px solid transparent;
-    transition: var(--transition);
-    margin: 0.5rem;
+    margin: 3rem;
+    justify-content: center;
 }
 
+
 .contact__container {
-    color: black;
-    grid-template-columns: 4fr 8fr;
-    column-gap: 1.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
+
 
 .contact__title {
     font-size: var(--h3-font-size);
     margin-bottom: .5rem;
 }
 
-.contact__form-group {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 1.5rem;
-}
 
-.contact__form-div {
-    position: relative;
-    margin-bottom: 1.875rem;
-    height: 3.75rem;
-}
-
-.contact__form-input {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    box-shadow: var(--shadow);
-    background-color: var(--container-color);
-    border: none;
-    outline: none;
-    border-radius: 1.875rem;
-    padding: 0.625rem 1.875rem;
-    z-index: 1;
-}
-
-.contact__form-area textarea {
-    height: 10.25rem;
-}
-
-.contact__form-area textarea {
-    resize: none;
-}
-
-.boton {
-    position: relative;
-    top: 90px;
-    justify-content: center;
-    
-}
-
-@media screen and (max-width: 1024px) {
-    .contact__container {
-        grid-template-columns: 300px 360px;
-        justify-content: center;
-
+.btn__contact {
+    padding: 0.60rem 0.6rem;
+    margin: 1rem;
+    line-height: 1;
+    border-radius: 1rem;
+    box-shadow: 0 0 1px rgb(' ' ' / / 0%');
+    border: 1px solid transparent;
+    color: #fff;
+    display: inline-block;
+    background-color: var(--first-color);
+    font-weight: var(--font-bold);
+  }
+  
+  @keyframes button-push {
+    50% {
+      transform: scale(0.8);
     }
-    }
+  
+      100% {
+        transform: scale(1);
+      }
+  }
 
-/* mediaqueries (small)*/
-@media screen and (max-width: 768px) {
-    .contact__container{
-        grid-template-columns: 310px;
-        row-gap: 1.875rem;
-
-    }
+.contact__option-icon {
+    font-size: 30px;
 }
+  
+  .btn__contact:hover {
+    animation: button-push 0.3s linear 1;
+  }
 
-@media screen and (max-width: 350px) {
-    .contact__container{
-        grid-template-columns: 1fr;
 
-    }
-}
+

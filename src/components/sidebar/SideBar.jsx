@@ -2,7 +2,9 @@ import React, { useState } from 'react'
 import Logo from '../../assets/logo.png'
 import './sidebar.css'
 import 'animate.css';
-
+import {AiOutlineHome, AiOutlineMail} from 'react-icons/ai'
+import {BsPerson, BsBriefcase} from 'react-icons/bs'
+import {FaGraduationCap} from 'react-icons/fa'
 
 const SideBar = () => {
   const [toggle, showMenu] = useState(false);
@@ -19,31 +21,31 @@ const SideBar = () => {
 
             <li className="nav__item">
               <a href="#home" className="nav__link">
-                <i className="icon-home"></i>
+                <AiOutlineHome />
               </a>
             </li>
 
             <li className="nav__item">
               <a href="#about" className="nav__link">
-              <i className="icon-user-following"></i>
+              <BsPerson />
               </a>
             </li>
             
             <li className="nav__item">
               <a href="#resume" className="nav__link">
-              <i className="icon-graduation"></i>
+              <FaGraduationCap />
               </a>
             </li>
 
             <li className="nav__item">
               <a href="#work" className="nav__link">
-              <i className="icon-briefcase"></i>
+              <BsBriefcase />
               </a>
             </li>
 
             <li className="nav__item">
               <a href="#contact" className="nav__link">
-              <i className="icon-bubble"></i>
+              <AiOutlineMail />
               </a>
             </li>
           </ul>
